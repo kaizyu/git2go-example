@@ -2,12 +2,15 @@ package main
 
 import (
   "fmt"
+  "os"
 )
 
 
 func main() {
 
-  repo, _ := OpenRepo("./fixtures/git_read_test")
+  pwd, _ := os.Getwd()
+
+  repo, _ := OpenRepo(pwd)
   branch, _ := repo.Branch()
 
   fmt.Println("repo head branch name is " + branch)

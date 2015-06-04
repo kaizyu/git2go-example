@@ -1,4 +1,4 @@
-box: docker-git2go-example
+box: kaizyu/golang-dev
 
 # Build definition
 build:

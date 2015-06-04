@@ -1,11 +1,5 @@
 box: golang
-dev:
-  steps:
-    - internal/watch:
-        code: |
-          go build ./...
-          ./git2go-example
-        reload: true
+
 # Build definition
 build:
   # The steps that will be executed on build
